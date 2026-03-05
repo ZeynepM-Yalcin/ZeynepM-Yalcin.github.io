@@ -502,41 +502,82 @@
   <!-- Contact -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="contact-inner">
-        <p class="section-label">Get in Touch</p>
-        <h2 class="section-title">Let's talk about<br>your <span class="accent">data.</span></h2>
-        <p>Whether you're starting a new data initiative, modernising legacy systems, or need ongoing support — we'd love to hear from you.</p>
-        <div class="contact-methods">
-          <a href="mailto:info@informaticsmentor.com" class="contact-method">
-            <div class="contact-method-icon">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <rect x="2" y="4" width="16" height="12" rx="2" stroke="#F7941D" stroke-width="1.5"/>
-                <path d="M2 6l8 5 8-5" stroke="#F7941D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div>
-              <div class="contact-method-label">Email</div>
-              <div class="contact-method-value">info@informaticsmentor.com</div>
-            </div>
-          </a>
-          <a href="http://informaticsmentor.com" target="_blank" rel="noopener" class="contact-method">
-            <div class="contact-method-icon">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <circle cx="10" cy="10" r="8" stroke="#F7941D" stroke-width="1.5"/>
-                <ellipse cx="10" cy="10" rx="4" ry="8" stroke="#F7941D" stroke-width="1.5"/>
-                <path d="M2 10h16" stroke="#F7941D" stroke-width="1.5"/>
-              </svg>
-            </div>
-            <div>
-              <div class="contact-method-label">Website</div>
-              <div class="contact-method-value">informaticsmentor.com</div>
-            </div>
-          </a>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <p class="section-label">Get in Touch</p>
+          <h2 class="section-title">Let's talk about<br>your <span class="accent">data.</span></h2>
+          <p>Whether you're starting a new data initiative, modernising legacy systems, or need ongoing support — we'd love to hear from you.</p>
+          <div class="contact-methods">
+            <a href="mailto:info@informaticsmentor.com" class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <rect x="2" y="4" width="16" height="12" rx="2" stroke="#F7941D" stroke-width="1.5"/>
+                  <path d="M2 6l8 5 8-5" stroke="#F7941D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-label">Email</div>
+                <div class="contact-method-value">info@informaticsmentor.com</div>
+              </div>
+            </a>
+            <a href="http://informaticsmentor.com" target="_blank" rel="noopener" class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="8" stroke="#F7941D" stroke-width="1.5"/>
+                  <ellipse cx="10" cy="10" rx="4" ry="8" stroke="#F7941D" stroke-width="1.5"/>
+                  <path d="M2 10h16" stroke="#F7941D" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-label">Website</div>
+                <div class="contact-method-value">informaticsmentor.com</div>
+              </div>
+            </a>
+          </div>
         </div>
-        <a href="mailto:info@informaticsmentor.com" class="btn-primary" style="margin-top:8px;">
-          Send us an email
-          <svg class="arrow-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+
+        <div class="contact-form">
+          <h3 class="contact-form-title">Send us a message</h3>
+          <p class="contact-form-sub">We'll get back to you within 24 hours.</p>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="John">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Smith">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="john@company.com">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interest</label>
+            <select id="service">
+              <option value="" disabled selected>Select a service area</option>
+              <option>Data Engineering / Warehouse</option>
+              <option>Business Intelligence</option>
+              <option>Software Development</option>
+              <option>Test Automation</option>
+              <option>Project Management</option>
+              <option>Education &amp; Training</option>
+              <option>IT Support</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us about your project or challenge..."></textarea>
+          </div>
+          <button class="btn-primary form-submit" id="submitBtn">
+            Send Message
+            <svg class="arrow-icon" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+
       </div>
     </div>
   </section>
